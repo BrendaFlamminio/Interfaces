@@ -1,0 +1,25 @@
+.container{
+margin: 0px auto;
+text-align: center;
+
+}
+#canvas{
+  margin-top: 6%;
+  margin-bottom: 4%;
+  margin: 2%;
+}
+.narvar1{
+  margin-top: 1%;
+}
+.form{
+  margin-top: 1%;
+}
+.fondo{
+  margin: 1%;
+}
+.texto{
+  margin: 2%;
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
