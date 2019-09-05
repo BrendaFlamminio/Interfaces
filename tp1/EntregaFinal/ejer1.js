@@ -1,7 +1,7 @@
 
 //Ejercicio 1
-var columnas=5;
-var filas=3;
+var columnas=100;
+var filas=100;
 var matriz = [];
 
 
@@ -103,6 +103,7 @@ function ocultarForm(){
 function limpiarTexto() {
   text.innerHTML='';
 }
+
 //Ejercicio 2
 function funcion2() {
   limpiarTexto();
@@ -194,7 +195,7 @@ function mostrarForm(){
 }
 
 function guardarOpcion(){
-  var url=document.getElementById("opciones").value;
+  let url=document.getElementById("opciones").value;
   cargarImagen(url);
 }
 
@@ -210,8 +211,9 @@ function cargarImagen(url) {
 
   }
 }
-aplicarFiltro();
-
+function sacarFiltro() {
+  guardarOpcion();
+}
 function aplicarFiltro() {
 
   for(let y = 0; y < imageData.width; y++){
