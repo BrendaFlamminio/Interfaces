@@ -1,0 +1,12 @@
+.container{
+margin: 0px auto;
+text-align: center;
+}
+#canvas{
+  margin-top: 6%;
+  margin-bottom: 4%;
+  margin: 2%;
+}
+.divCerrar{
+float: left;
+}
