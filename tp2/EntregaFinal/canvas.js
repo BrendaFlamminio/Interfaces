@@ -29,10 +29,13 @@ poligono.unirFigura(x,y);
 }
 
 function limpiarCanvas(){
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  contadorCirculos=3;
+  cerrar();
+  ctx.clearRect(0, 0,500,500);
   this.activo=true;
   poligono.limpiarArreglo();
     divCerrar.hidden=false;
+    poligono =new Poligono;
 }
 
 function cerrar(){
@@ -57,6 +60,7 @@ function detectarClick(e){
 
 
 function moverlos(e){
+    if(activo==false){
   var pX = e.layerX;
   var pY = e.layerY;
 	if (this.mover){
@@ -73,6 +77,7 @@ function moverlos(e){
 }
 function actualizar(cambie){
 this.poligono.redibujar(cambie);
+}
 }
 
 function soltar(e){
