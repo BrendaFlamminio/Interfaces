@@ -31,6 +31,7 @@ poligono.unirFigura(x,y);
 function limpiarCanvas(){
   contadorCirculos=3;
   cerrar();
+  contadorCirculos=0;
   ctx.clearRect(0, 0,500,500);
   this.activo=true;
   poligono.limpiarArreglo();
