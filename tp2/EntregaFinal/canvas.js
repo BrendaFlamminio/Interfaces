@@ -76,9 +76,10 @@ function moverlos(e){
 		}
 	}
 }
+}
+
 function actualizar(cambie){
 this.poligono.redibujar(cambie);
-}
 }
 
 function soltar(e){
