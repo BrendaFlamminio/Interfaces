@@ -3,16 +3,17 @@
 }
 .pizarra{
     margin: 2%;
-    width: 1000px;
-    height: 736px;
+    width: 1200px;
+    height: 700px;
    border: 3px solid blanchedalmond;
-   background: url('fondo.jpg') 0 0 repeat;
-   animation: movebg 5s linear infinite;
+   background: url('fondo.jpg') 0 0 repeat-x;
+   animation: movebg 8s linear infinite;
   }   
 @keyframes movebg {
-  0% { background-position:550px }
+  0% { background-position:1000px }
   100% { background-position:0 }
 }
+
 
 
 
@@ -37,6 +38,7 @@
           50% {left:80%; transform: translateX(0)}
           100% {left:0%; transform: translate(-595);}
         }*/
+
         .saltar{
           margin-top: 550px;
           left: 0px;
