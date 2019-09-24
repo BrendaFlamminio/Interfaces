@@ -6,7 +6,7 @@ let contadorCirculos=0;
 var activo=true; // acepta o no los ciruclos
 var divCerrar=document.querySelector('.divCerrar');
 divCerrar.hidden=false;
-let mover=false;
+let mover=false; // permite mover o no la figura dependiendo si el poligono esta cerrado
 let figuraDectada=null;
 var tecla=false; //si la letra esta siendo precionada
 let color=250 // va ir cambiando segun la rueda del mouse
@@ -47,8 +47,6 @@ if(contadorCirculos>=3){
   contadorCirculos=0;
 }
 }
-
-
 
 function detectarClick(e){
   var px = e.layerX;
