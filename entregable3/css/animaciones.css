@@ -38,6 +38,9 @@ body{
   0%,100% { transform: rotate(10deg) }
   50% { transform: rotate(-10deg)}
 }
+.perderVida{
+  animation: caer 1s ;
+}
 .contadorMonedas{
   background: url('../images/monedaTablero.png');
   width:47px;
@@ -91,7 +94,7 @@ body{
             100% {background-position: -636px}
           }
         .moneda{
-            top: 470px;
+            top: 400px;
             left:200px;
             width: 85px;
             height: 78px;
