@@ -7,22 +7,34 @@
 		<title>Practico 3</title>
 	</head>
     <body >
-		<!--<audio autoplay loop>
-				<source src='Mall.mp3'>
-		</audio>-->
-		
+	
+<div class="instrucciones">
+		<h4>Bienvenido 
+		el objetivo del juego es saltar las rocas evitando
+		 que el unicornio se golpee y juntar 10 monedas 
+		 para ganar el juego.
+		 Instrucciones-> hacerlo saltar con la flecha hacia arriba
+	</h4>
+</div>
+
 	<div class="pizarra">
+			
 			<div class="tablero">
 				<div class="vida1"></div>
 				<div class="vida2"></div>
 				<div class="vida3"></div>
-				<div class="contadorMonedas"></div>
+				<div class="contadorMonedas">
+					<div class="contador"></div>
+				</div>
 			</div>
 		<div class="moneda"></div>
 		<div class="Acaminar"></div>
 		<div class="tronco"></div>
 		<div class="roca"></div>
-		<div hidden class="gameOver">Game Over</div>
+		<div hidden class="gameOver">
+				<h1 class="texto"></h1>
+				<button class="btn btn-secondary botonReinicio">Volver a jugar</button>
+		</div>
 	</div>
 </body>
 <script src="./js/funciones.js"></script>

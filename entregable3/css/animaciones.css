@@ -48,6 +48,19 @@ body{
   z-index: 1;
   margin-left: 150px;
   display: inline-block;
+  animation: girar 2s infinite;
+}
+@keyframes girar {
+  0%,100% {transform: rotateY(0deg);}
+  50%{transform: rotateY(-180deg);}
+}
+.contador{
+  width:47px;
+  height: 41px;
+  z-index: 1;
+  margin-left:50px;
+  display: inline-block;
+
 }
 .pizarra{
     margin: auto;
@@ -55,14 +68,25 @@ body{
     height: 641px;
    border: 3px solid blanchedalmond;
    background: url('../images/fondo.jpg') 0 0 repeat-x;
-   animation: movebg 7s linear infinite;
+   animation: movebg 8s linear infinite;
    z-index: -2;
   }   
 @keyframes movebg {
   0% { background-position:1000px }
   100% { background-position:0}
 }
-
+.gameOver{
+  width: 980px;
+  height: 641px;
+  background: transparent  white ;
+}
+.h1{
+  font-size: 300px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 200px;
+  color: rgb(250, 17, 17)
+}
     .Acaminar{
         top: 450px;
         left: 400px;
@@ -130,7 +154,7 @@ body{
           width: 81px;
           height: 70px;
           background: url('../images/explosion.png') 0 0;
-          animation: explotar 3s steps(3) infinite;
+          animation: explotar 1s steps(3) infinite;
 
         
           position: absolute;
@@ -155,7 +179,16 @@ body{
               0% { background-position:0 }
               100% {background-position: -315px}
             }
-    
+    .instrucciones{
+      width: 150px;
+      height: 500px;
+      position: absolute;
+      display: inline-block;
+    }
+    h4{
+      color: rgba(75, 151, 238, 0.911);
+
+    }
 
           
           
