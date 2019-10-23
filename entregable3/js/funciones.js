@@ -97,10 +97,10 @@ function refrescar(){
         hacerSaltar();
     }
 
-    if(posicionX>20){
-        posicionX-=20;
+    if(posicionX>10){
+        posicionX-=10;
     }
-    if(posicionX==20){
+    if(posicionX==10){
         mostrarRoca=false;
         mostrarMoneda=false;
         setTimeout(function(){
