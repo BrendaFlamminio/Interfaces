@@ -49,17 +49,19 @@ body{
   margin-left: 150px;
   display: inline-block;
   animation: girar 2s infinite;
+ 
 }
 @keyframes girar {
   0%,100% {transform: rotateY(0deg);}
   50%{transform: rotateY(-180deg);}
 }
 .contador{
-  width:47px;
-  height: 41px;
+  position: relative;
+  width:10px;
+  height: 10px;
   z-index: 1;
-  margin-left:50px;
   display: inline-block;
+  
 
 }
 .pizarra{
@@ -69,7 +71,10 @@ body{
    border: 3px solid blanchedalmond;
    background: url('../images/fondo.jpg') 0 0 repeat-x;
    animation: movebg 8s linear infinite;
+   animation-play-state: running;
    z-index: -2;
+   margin-left:200px;
+   position: absolute;
   }   
 @keyframes movebg {
   0% { background-position:1000px }
@@ -80,20 +85,19 @@ body{
   height: 641px;
   background: transparent  white ;
 }
-.h1{
-  font-size: 300px;
+h1{
+  margin-top: 1%;
   font-weight: bold;
   text-align: center;
-  margin-top: 200px;
-  color: rgb(250, 17, 17)
+  color: rgba(238, 75, 189, 0.911);
 }
     .Acaminar{
         top: 450px;
-        left: 400px;
+        left: 150px;
         width: 100px;
         height: 107px;
         background: url('../images/correr.png') 0 0;
-        animation: caminar 1s steps(6) infinite;
+        animation: caminar 0.9s steps(6) infinite;
                   
         
         position: absolute;
@@ -105,7 +109,7 @@ body{
 
         .saltar{
           top: 370px;
-          left: 400px;
+          left: 150px;
           width: 106px;
           height: 168px;
           background: url('../images/salte.png') 0 0;
@@ -150,7 +154,7 @@ body{
 
         .explosion{
           top: 505px;
-          left:400px;
+          left:150px;
           width: 81px;
           height: 70px;
           background: url('../images/explosion.png') 0 0;
@@ -166,7 +170,7 @@ body{
           }
           .chocar{
             top: 450px;
-            left: 400px;
+            left: 150px;
             width: 105px;
             height: 118px;
             background: url('../images/golpe.png') 0 0;
@@ -179,16 +183,25 @@ body{
               0% { background-position:0 }
               100% {background-position: -315px}
             }
+            
     .instrucciones{
-      width: 150px;
-      height: 500px;
+      width: 550px;
+      height: 120px;
       position: absolute;
       display: inline-block;
+      background-color: rgba(150, 230, 231, 0.455);
+      border:solid 1px cadetblue;
+      border-radius: 10px;
     }
     h4{
-      color: rgba(75, 151, 238, 0.911);
-
+      color: rgba(238, 75, 189, 0.911);
+      position: absolute;
     }
-
+    .botonReinicio{
+      margin-left: 231px;
+      margin-top: 5px;
+      position: absolute;
+     
+    }
           
           
