@@ -1,0 +1,194 @@
+body{
+  background-color:#F0AFAF;
+}
+.tablero{
+  background: url('../images/tablero.png');
+  width: 251px;
+  height: 157px;
+  margin-left: 730px;
+  z-index: -1;
+  
+}
+.vida1{
+  background: url('../images/vida.png');
+  width:47px;
+  height: 41px;
+  z-index: 1;
+  margin-left: 90px;
+  display: inline-block;
+  animation : amacar 2s infinite;
+}
+.vida2{
+  background: url('../images/vida.png');
+  width:47px;
+  height: 41px;
+  z-index: 1;
+  display: inline-block;
+  animation : amacar 2s infinite;
+}
+.vida3{
+  background: url('../images/vida.png');
+  width:46px;
+  height: 39px;
+  z-index: 1;
+  display: inline-block;
+  animation : amacar 2s infinite;
+}
+@keyframes amacar{
+  0%,100% { transform: rotate(10deg) }
+  50% { transform: rotate(-10deg)}
+}
+.perderVida{
+  animation: caer 1s ;
+}
+.contadorMonedas{
+  background: url('../images/monedaTablero.png');
+  width:47px;
+  height: 41px;
+  z-index: 1;
+  margin-left: 150px;
+  display: inline-block;
+  animation: girar 2s infinite;
+}
+@keyframes girar {
+  0%,100% {transform: rotateY(0deg);}
+  50%{transform: rotateY(-180deg);}
+}
+.contador{
+  width:47px;
+  height: 41px;
+  z-index: 1;
+  margin-left:50px;
+  display: inline-block;
+
+}
+.pizarra{
+    margin: auto;
+    width: 980px;
+    height: 641px;
+   border: 3px solid blanchedalmond;
+   background: url('../images/fondo.jpg') 0 0 repeat-x;
+   animation: movebg 8s linear infinite;
+   z-index: -2;
+  }   
+@keyframes movebg {
+  0% { background-position:1000px }
+  100% { background-position:0}
+}
+.gameOver{
+  width: 980px;
+  height: 641px;
+  background: transparent  white ;
+}
+.h1{
+  font-size: 300px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 200px;
+  color: rgb(250, 17, 17)
+}
+    .Acaminar{
+        top: 450px;
+        left: 400px;
+        width: 100px;
+        height: 107px;
+        background: url('../images/correr.png') 0 0;
+        animation: caminar 1s steps(6) infinite;
+                  
+        
+        position: absolute;
+        }
+        @keyframes caminar {
+          0% { background-position:-5px }
+          100% {background-position: -620px}
+        }
+
+        .saltar{
+          top: 370px;
+          left: 400px;
+          width: 106px;
+          height: 168px;
+          background: url('../images/salte.png') 0 0;
+          animation: saltar 0.8s steps(6) infinite;
+          
+          position: absolute;
+          }
+          @keyframes saltar {
+            0% { background-position:0 }
+            100% {background-position: -636px}
+          }
+        .moneda{
+            top: 400px;
+            left:200px;
+            width: 85px;
+            height: 78px;
+            background: url('../images/moneda.png') 0 0;
+            animation: moverMoneda 1s steps(4) infinite;
+          
+            position: absolute;
+            }
+
+            @keyframes moverMoneda {
+              0% { background-position: 0 }
+              100% {background-position: -338px}
+            }
+            .roca{
+              top: 515px;
+              left:990px;
+              width: 55px;
+              height: 50px;
+              background: url('../images/roca.png') 0 0;
+              animation: moverRoca 5s steps(1) infinite;
+            
+              position: absolute;
+              }
+    
+              @keyframes moverRoca {
+                0% { background-position: 55px }
+                100% {background-position: 0}
+              }
+
+        .explosion{
+          top: 505px;
+          left:400px;
+          width: 81px;
+          height: 70px;
+          background: url('../images/explosion.png') 0 0;
+          animation: explotar 1s steps(3) infinite;
+
+        
+          position: absolute;
+          }
+
+          @keyframes explotar {
+            0% { background-position: 81px }
+            100% {background-position: 0}
+          }
+          .chocar{
+            top: 450px;
+            left: 400px;
+            width: 105px;
+            height: 118px;
+            background: url('../images/golpe.png') 0 0;
+            animation: chocarse 1s steps(3) infinite;
+                      
+            
+            position: absolute;
+            }
+            @keyframes  chocarse{
+              0% { background-position:0 }
+              100% {background-position: -315px}
+            }
+    .instrucciones{
+      width: 150px;
+      height: 500px;
+      position: absolute;
+      display: inline-block;
+    }
+    h4{
+      color: rgba(75, 151, 238, 0.911);
+
+    }
+
+          
+          
